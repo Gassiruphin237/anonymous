@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 // URL de base de l'API
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://api-anonymous-nqlg.onrender.com';
 
 // Fonction pour enregistrer un utilisateur
 export const registerUser = async (name, phone) => {
