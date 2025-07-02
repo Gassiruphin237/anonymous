@@ -1,0 +1,48 @@
+/* Container pour centrer le formulaire */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style de l'input pour la question */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Style du bouton de soumission */
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* On le rend aussi large que l'input */
+}
+
+button:hover {
+  background-color: #45a049; /* Couleur un peu plus foncée au survol */
+}
+
+button:disabled {
+  background-color: #ddd; /* Couleur grisée quand le bouton est désactivé */
+  cursor: not-allowed;
+}
+
+
+/* Animation pour le champ input et bouton en focus */
+input[type="text"]:focus, button:focus {
+  outline: none;
+  border: 1px solid #4CAF50; /* Mettre une bordure verte au focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Ombre verte */
+}
